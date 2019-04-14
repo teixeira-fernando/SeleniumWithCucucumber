@@ -13,9 +13,7 @@ import pages.LoginPage;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Karthik on 10/15/2016.
- */
+
 public class LoginStep extends BaseUtil{
 
     private  BaseUtil base;
@@ -68,7 +66,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page wrongly$")
     public void iShouldSeeTheUserformPageWrongly() throws Throwable {
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("Initial")).isDisplayed(), true);
     }
 
 
